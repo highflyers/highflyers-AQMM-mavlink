@@ -1137,7 +1137,7 @@
       </entry>
       <entry name="MAV_CMD_DO_MOTOR_TEST" value="209">
         <description>Mission command to perform motor test</description>
-        <param index="1">motor sequence number (a number from 1 to max number of motors on the vehicle)</param>
+        <param index="1">motor sequence number ([1, max_motors]: test motors in a vehicle-dependent sequence that follows a clockwise order, usually shown as A, B, C, D, etc; [129, 129 + max_motors]: test motors following the normal channel order</param>
         <param index="2">throttle type (0=throttle percentage, 1=PWM, 2=pilot throttle channel pass-through. See MOTOR_TEST_THROTTLE_TYPE enum)</param>
         <param index="3">throttle</param>
         <param index="4">timeout (in seconds)</param>
